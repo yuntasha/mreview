@@ -14,10 +14,42 @@
                 <div class="custom-file">
                     <input type="file" class="custom-file-input files"
                            id="fileInput" multiple>
-                    <label class="custom-file-label" databrowse="Browse"></label>
+                    <label class="custom-file-label" databrowse="Browse"></label>
                 </div>
             </div>
             <div class="box">
+            </div>
+            <style>
+                .uploadResult {
+                    width: 100%;
+                    background-color: gray;
+                    margin-top: 10px;
+                }
+
+                .uploadResult ul {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    align-items: center;
+                    vertical-align: top;
+                    overflow: auto;
+                }
+
+                .uploadResult ul li {
+                    list-style: none;
+                    padding: 10px;
+                    margin-left: 2em;
+                }
+
+                .uploadResult ul li img {
+                    width: 100px;
+                }
+            </style>
+
+            <div class="uploadResult">
+                <ul>
+
+                </ul>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -91,6 +123,21 @@
                             console.log(textStatus);
                         }
                     }); //$.ajax
+                    function showResult(uploadResultArr){
+                        var uploadUL = $(".uploadResult ul");
+                        var str ="";
+                        $(uploadResultArr).each(function(i, obj) {
+                            str += "<li data-name='" + obj.fileName + "' data-path='"+obj.folderPath+"' data-uuid='"+obj.uuid+"'>";
+                            str + " <div>";
+                            str += "<button type='button' data-file=\'" + obj.imageURL + "\' "
+                            str += "class='btn-warning btn-sm'>X</button><br>";
+                            str += "<img src='/display?fileName=" + obj.thumbnailURL + "'>";
+                            str += "</div>";
+                            str + "</li>";
+                        });
+                        uploadUL.append(str);
+                    }
+
                 }); //end change event
             });
         </script>
