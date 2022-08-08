@@ -140,7 +140,7 @@
 
                 $('.starrr').starrr({
                     rating: grade,
-                    change: function(e, value){
+                    change: function (e, value) {
                         if (value) {
                             console.log(value);
                             grade = value;
@@ -165,30 +165,31 @@
                     reviewModal.modal('show');
                 });
 
-                //
-                // $('.reviewSaveBtn').click(function() {
-                //
-                //     var data = {mno:mno, grade:grade, text:inputText.val(), mid: inputMid.val() };
-                //
-                //     console.log(data);
-                //
-                //     $.ajax({
-                //         url:'/reviews/'+mno,
-                //         type:"POST",
-                //         data:JSON.stringify(data),
-                //         contentType:"application/json; charset=utf-8",
-                //         dataType:"text",
-                //         success: function(result){
-                //
-                //             console.log("result: " + result);
-                //
-                //             self.location.reload();
-                //
-                //         }
-                //     })
-                //     reviewModal.modal('hide');
+
+                $('.reviewSaveBtn').click(function () {
+
+                    var data = {mno: mno, grade: grade, text: inputText.val(), mid: inputMid.val()};
+
+                    console.log(data);
+
+                    $.ajax({
+                        url: '/reviews/' + mno,
+                        type: "POST",
+                        data: JSON.stringify(data),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "text",
+                        success: function (result) {
+
+                            console.log("result: " + result);
+
+                            self.location.reload();
+
+                        }
+                    })
+                    reviewModal.modal('hide');
 
                 });
+            }
 
 
                 // //페이지가 열리면 바로 리뷰 데이터들을 가져와서 사용한다.
