@@ -97,8 +97,10 @@
 
 <pre>
 <code>
+```
 <a onclick="location.href='http://localhost:8080/movie/list' " class="list-group-item list-group-item-action bg-light">Movie List</a>
 <a onclick="location.href='http://localhost:8080/movie/register' " class="list-group-item list-group-item-action bg-light">Movie Register</a>
+```
 </code>
 </pre>
 -위처럼 코드를 바꿔 링크를 연결시켜줌
