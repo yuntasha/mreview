@@ -95,6 +95,10 @@
 ## 사이드바 변경
 ![캡처](https://user-images.githubusercontent.com/97961558/183622028-093a953f-9fcf-4818-88cb-e4fde92532a7.PNG)
 
+<pre>
+<code>
 <a onclick="location.href='http://localhost:8080/movie/list' " class="list-group-item list-group-item-action bg-light">Movie List</a>
 <a onclick="location.href='http://localhost:8080/movie/register' " class="list-group-item list-group-item-action bg-light">Movie Register</a>
+</code>
+</pre>
 -위처럼 코드를 바꿔 링크를 연결시켜줌
