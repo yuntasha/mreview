@@ -91,3 +91,10 @@
     - 섬네일누르면 원본파일 출력
 
 ![Untitled](https://user-images.githubusercontent.com/97961558/183564114-937f831b-0bf0-4839-b2a2-fc3ba4705420.png)
+
+## 사이드바 변경
+![캡처](https://user-images.githubusercontent.com/97961558/183622028-093a953f-9fcf-4818-88cb-e4fde92532a7.PNG)
+
+<a onclick="location.href='http://localhost:8080/movie/list' " class="list-group-item list-group-item-action bg-light">Movie List</a>
+<a onclick="location.href='http://localhost:8080/movie/register' " class="list-group-item list-group-item-action bg-light">Movie Register</a>
+-위처럼 코드를 바꿔 링크를 연결시켜줌
