@@ -65,9 +65,8 @@
 
 ## API
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4ad29e9-b0f5-46e3-9d8c-155284891774/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4fe4916c-083f-48cb-9c29-0023f1b798a2/Untitled.png)
+![Untitled (1)](https://user-images.githubusercontent.com/97961558/183564163-718c57eb-9cb4-4449-8563-93587337b76c.png)
+![Untitled (2)](https://user-images.githubusercontent.com/97961558/183564172-7f5c9cfb-1296-4ae4-bd43-b4101de9d08f.png)
 
 ## 깃플로우
 
@@ -91,4 +90,4 @@
     - 조회화면 만들기
     - 섬네일누르면 원본파일 출력
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4aa85bbf-6513-4a07-ad0c-9fb03c2424ed/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/97961558/183564114-937f831b-0bf0-4839-b2a2-fc3ba4705420.png)
